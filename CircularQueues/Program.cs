@@ -39,5 +39,25 @@
             /* Once the position of REAR is determined, the element is added at its proper place. */
             queue_array[REAR] = element;
         }
+        public void remove()
+        {
+            /* Checks wheather the queue is empty. */
+            if (FRONT == -1)
+            {
+                Console.WriteLine("\nQueue Underflow\n");
+                return;
+            }
+            Console.WriteLine("\nThe Element Deleted from the queue is: " + queue_array[FRONT] + "\n");
+            /* Check if the queue has one element. */
+            if (FRONT == REAR)
+            {
+                FRONT = -1;
+                REAR = -1;
+            }
+            else
+            {
+                
+            }
+        }
     }
 }
