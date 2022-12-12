@@ -56,7 +56,14 @@
             }
             else
             {
-                
+                /* if the element to be deleted is at the last position of the array, then the value 
+                 * of FRONT is set to 0 i.e to the first element of the array. */
+                if(FRONT == max - 1)
+                    FRONT = 0;
+                else
+                    /* FRONT is increment by one if it is not the first element of the array. */
+                    FRONT = FRONT + 1;
+
             }
         }
     }
