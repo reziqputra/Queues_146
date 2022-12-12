@@ -51,8 +51,8 @@
             /* Check if the queue has one element. */
             if (FRONT == REAR)
             {
-                FRONT = -1;
-                REAR = -1;
+                FRONT = - 1;
+                REAR = - 1;
             }
             else
             {
@@ -120,7 +120,7 @@
                     Console.WriteLine("3. Display values");
                     Console.WriteLine("4. Exit");
                     Console.Write("\nEnter your Choice (1-4):   ");
-                    ch = Convert.ToChar(Console.Read());
+                    ch = Convert.ToChar(Console.ReadLine());
                     Console.WriteLine();
                     switch (ch)
                     {
