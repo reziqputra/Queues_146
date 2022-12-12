@@ -137,6 +137,11 @@
                                 queue.remove();
                             }
                             break;
+                        case '3':
+                            {
+                                queue.display();
+                            }
+                            break;
                     }
                 }
             }
