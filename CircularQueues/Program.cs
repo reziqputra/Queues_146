@@ -19,6 +19,23 @@
                 Console.WriteLine("\nQueue overflow\n");
                 return;
             }
+            /* This following statement checks whether the queue is empty. If the queue is empty
+             * , then the value of the REAR and FRONT variables is set to 0 */
+            if (FRONT == - 1)
+            {
+                FRONT = 0;
+                REAR = 0;
+            }
+            else
+            {
+                /*If REAR is at the last position of the array, then value of
+                 * REAR is set to 0 that correspondens to the first position of the array. */
+                if (REAR == max - 1)
+                    REAR = 0;
+                else
+                    /* If REAR is not at last position, then its value is incremented by one */
+                    REAR = REAR + 1;
+            }
         }
     }
 }
